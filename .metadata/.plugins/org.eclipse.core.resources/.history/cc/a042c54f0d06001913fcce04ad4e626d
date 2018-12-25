@@ -1,0 +1,22 @@
+package bars.login.server.ronelle.s.nolasco.resource;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/rest/db")
+public class DbServiceResource {
+
+	private UsersRepository UsersRepository;
+
+	@GetMapping("/{username}")
+	public List<String> getUser(@PathVariable("username") final String username)
+	{
+		UsersRepository.fibdByUsername(username);
+		return null;
+	}
+}

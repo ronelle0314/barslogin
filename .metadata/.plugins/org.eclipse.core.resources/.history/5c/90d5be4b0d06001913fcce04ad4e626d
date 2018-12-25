@@ -1,0 +1,5 @@
+package bars.login.server.ronelle.s.nolasco.repository;
+
+public interface UsersRepository {
+
+}

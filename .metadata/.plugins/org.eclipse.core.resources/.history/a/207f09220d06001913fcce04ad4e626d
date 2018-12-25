@@ -1,0 +1,5 @@
+package bars.login.server.ronelle.s.nolasco.resource;
+
+public class UsersRepository {
+
+}
